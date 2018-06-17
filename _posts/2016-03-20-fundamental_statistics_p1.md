@@ -44,6 +44,7 @@ github-link: "na"
     + If *odd* samples -> median is middle
     + If *even* samples -> average the 2 middle points
 
+<!--
 {% tikz 20160320_03 %}
     \node at (-0.5,0.5) (nodeAA) {};
     \node at (0,0) (nodeA) {1};
@@ -63,7 +64,7 @@ github-link: "na"
     \node at (6,1) (nodemid) {I};
     \draw[ultra thick](nodeAA) -- (nodeMM);
 {% endtikz %}
-  
+-->
 
 * **Variance and Standard Deviation**:
 
@@ -113,7 +114,7 @@ For a Normal distribution:
 * about 95% ........................ 2 \\(\sigma\\)
 * about 99.7% ........................ 3 \\(\sigma\\)
 
-
+<!--
 {% tikz 20160320_05 %}
 
 % define normal distribution function 'normaltwo'
@@ -144,7 +145,7 @@ For a Normal distribution:
     \draw[->] (0,0) -- (6.2,0) node[right] {};
     \draw[->] (0,0) -- (0,5) node[above] {};
 {% endtikz %}
-
+-->
 
 
 # Chebyshev's Theorem
@@ -173,7 +174,7 @@ $$
 
 
 # Quartiles
-
+<!--
 {% tikz 20160320_01 %}
 
     \node at (0,0) (nodeA) {};
@@ -188,7 +189,7 @@ $$
     \draw[ultra thick,arrows=->](nodeD) -- (nodeE);
     \draw (nodeC) -- (nodeE) node [midway, below] (TextNode) {upper half};
 {% endtikz %}
-
+-->
 
 * \\(Q_1\\) = first quartile  (25% of the data)
 * \\(Q_2 \\) = 2nd quartile (50% of the data)
@@ -196,7 +197,7 @@ $$
 
 
 # BoxPlots
-
+<!--
 {% tikz 20160320_02 %}
     \draw (0,0) -- (1,0) -- (1,0.8) -- (0,0.8) -- (0,0);
     \draw (0,0.8) -- (1,0.8) -- (1,2.6) -- (0,2.6) -- (0,0.8);
@@ -207,3 +208,4 @@ $$
     \node at (1.5,2.6) (nodeE) {$Q_3$};
     \draw[ultra thick](nodeA) -- (nodeB);
 {% endtikz %}
+-->
