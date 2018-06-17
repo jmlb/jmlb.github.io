@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div>
+
+  {{ content }}
+
+  <h2>Latest Posts</h2>
+
+  <div>&nbsp;</div>
+hjkjg
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <div> 
+          {% if page.img_post %}
+              <img src="/images/post_title_imgs/{{ post.img_post }}">
+          {% endif %}
+        </div>
+        <div>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+        </h2>
+
+        <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

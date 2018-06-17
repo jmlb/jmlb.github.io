@@ -1,0 +1,646 @@
+@import "normalize";
+@import "rouge-github";
+@import "variables";
+@import "blog";
+
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $body-text-color;
+}
+
+a {
+  color: $body-link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  + .btn {
+    margin-left: 1rem;
+  }
+
+  @include large {
+    padding: 0.75rem 1rem;
+  }
+
+  @include medium {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  @include small {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+
+  + .btn {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
+}
+
+/////////////////////////
+//Style Icons 
+/////////////////////////
+.ul-icons-links {
+    list-style-type: none;
+    align:center;
+    margin-top: -5rem;
+    margin-bottom: 0.1rem;
+    margin-left: 0.1rem;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFF;
+  }
+
+.li-icons-links {
+    display: block;
+    float: left;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    width: 14rem;
+    background-color: #FFF;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+.li-icons-links-h2 {
+    display: block;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #000;
+    text-align: center;
+}
+.li-icons-links-p {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: #000;
+    text-align: center;
+}
+.img-icon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+}
+//////////////////////////
+//Style Navigation Bar
+//////////////////////////
+.div-menu-bar {
+  width: 100%;
+  background-image: linear-gradient(to right top, #FFF 0%, #FFF 100%);
+  margin: 0;
+  padding-top: 0.5em;
+  height:10rem;
+}
+.nav-bar {
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  height: 2rem;
+  float: right;
+  width: 100%
+  }
+
+.ul-nav-links {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  }
+.li-nav-links {
+  display: inline-block;
+}
+
+.li-nav-links a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+.li-nav-links a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+//Style Banner 
+#banner {
+    background-attachment: scroll, scroll, scroll, fixed;
+    background-color: #645862;
+    background-image: url("../../images/banner/light-bl.svg"), url("../../images/banner/light-br.svg"), url("../../images/banner/overlay.png"), url("../../images/banner/banner.jpg");
+    background-position: bottom left, bottom right, top left, top center;
+    background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+    background-size: 25em, 25em, auto, cover;
+    color: white;
+    cursor: default;
+    text-align: center;
+
+    @include large {
+    padding: 10rem 6rem;
+    }
+
+    @include medium {
+    padding: 10rem 4rem;
+    }
+
+    @include small {
+    padding: 10rem 1rem;
+    }
+  }
+
+
+#banner .inner {
+        transition-property: all;
+        transition-duration: .5s;
+        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        background: rgba(52, 27, 43, 0.5);
+        color: white;
+        display: inline-block;
+        //opacity: 0;
+        padding-top: 2rem;
+        z-index:-1;
+        overflow: hidden;
+        height: 28rem;
+        width:50rem;
+        text-align: center;
+        }
+
+
+#banner .inner header {
+            display: inline-block;
+            border-bottom: solid 2px;
+            border-top: solid 2px;
+            margin: 0 0 2em 0;
+            padding: 3px 0 3px 0;
+            z-index: 2;
+            text-align: center;
+            }
+
+#banner .inner header h2 {
+                border-bottom: solid 2px;
+                font-size: 2.8em;
+                border-top: solid 2px;
+                font-weight: 900;
+                letter-spacing: 0.2em;
+                margin: 0;
+                padding-left: 0.05em;
+                position: relative;
+                text-transform: uppercase;
+
+                @include large {
+                  font-size: 2.8rem;
+                }
+
+                @include medium {
+                    font-size: 2.25rem;
+                }
+
+                @include small {
+                    font-size: 1.75rem;
+                }
+            }
+
+
+#banner .inner .text_slide1 {
+      letter-spacing: 0.1em;
+      margin: 0;
+      //text-transform: uppercase;
+      font-size: 2.5rem;
+      }
+
+#banner .inner .text_slide2 {
+      letter-spacing: 0.1em;
+      margin: 0;
+      font-size: 1.6rem;
+      }
+
+#banner .menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  align: center;
+}
+
+#banner .menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 .2em 1em;
+  &:hover {
+  background: red;
+  }
+}
+
+.inner .slide {
+  position: relative;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 0em 0em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s .75s;
+
+}
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left .65s ease-out;
+}
+
+.slide-1 {
+  width: 47rem;
+  height: 20rem;
+  float: left;
+}
+
+.slide-2 {
+  width: 47rem;
+  padding: 0rem;
+}
+///////////////////////
+
+
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+
+
+}
+
+.project-tagline {
+  margin-bottom: 2rem;
+  font-weight: normal;
+  opacity: 0.7;
+
+  @include large {
+    font-size: 1.25rem;
+  }
+
+  @include medium {
+    font-size: 1.15rem;
+  }
+
+  @include small {
+    font-size: 1rem;
+  }
+}
+
+.project-date {
+  margin-bottom: 0rem;
+  font-weight: normal;
+  opacity: 0.7;
+  font-style: italic;
+
+  @include large {
+    font-size: 1.0rem;
+  }
+
+  @include medium {
+    font-size: 0.95rem;
+  }
+
+  @include small {
+    font-size: 0.75rem;
+  }
+}
+
+.main-content {
+  word-wrap: break-word;
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  @include large {
+    max-width: 80rem;
+    padding: 3rem 6rem;
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+
+  @include medium {
+    padding: 3rem 4rem;
+    font-size: 1.1rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: $section-headings-color;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  code {
+    padding: 2px 4px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9rem;
+    color: $code-text-color;
+    background-color: $code-bg-color;
+    border-radius: 0.3rem;
+  }
+
+  pre {
+    padding: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: $code-text-color;
+    word-wrap: normal;
+    background-color: $code-bg-color;
+    border: solid 1px $border-color;
+    border-radius: 0.3rem;
+
+    > code {
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+      color: $code-text-color;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0;
+    }
+  }
+
+  .highlight {
+    margin-bottom: 1rem;
+
+    pre {
+      margin-bottom: 0;
+      word-break: normal;
+    }
+  }
+
+  .highlight pre,
+  pre {
+    padding: 0.8rem;
+    overflow: auto;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    border-radius: 0.3rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  pre code,
+  pre tt {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+
+    &:before,
+    &:after {
+      content: normal;
+    }
+  }
+
+  ul,
+  ol {
+    margin-top: 0;
+  }
+
+  blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: $blockquote-text-color;
+    border-left: 0.3rem solid $border-color;
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+    -webkit-overflow-scrolling: touch;
+
+    th {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      padding: 0.5rem 1rem;
+      border: 1px solid $table-border-color;
+    }
+  }
+
+  dl {
+    padding: 0;
+
+    dt {
+      padding: 0;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    dd {
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: $hr-border-color;
+    border: 0;
+  }
+}
+
+.site-footer {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: solid 1px $hr-border-color;
+
+  @include large {
+    font-size: 1rem;
+  }
+
+  @include medium {
+    font-size: 1rem;
+  }
+
+  @include small {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.site-footer-owner {
+  display: block;
+  font-weight: bold;
+}
+
+.site-footer-credits {
+  color: $blockquote-text-color;
+}
+
+.site-footer {
+
+  @include large {
+  }
+
+  @include medium {
+  }
+
+  @include small {
+  }
+
+  .my-span-icon {
+
+    a {
+    	text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+
+    @include large {
+      padding: 0px 5px 0px 5px;
+    }
+
+    @include medium {
+      //font-size: 1rem;
+      padding: 0px 10px 10px 10px;
+    }
+
+    @include small {
+      padding: 0px 10px 10px 10px;
+    }
+  }
+
+  .my-svg-icon {
+
+    color: $body-text-color; // IE8
+    fill: $body-text-color; // IE8
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+      text-decoration: none;
+      color: $section-headings-color; // IE8
+      fill: $section-headings-color;
+      transform: scale(1.25);
+      transition: color .5s, transform .2s ease-out
+    }
+
+    @include large {
+      width: 28px;
+      height: 28px;
+    }
+
+    @include medium {
+      width: 32px;
+      height: 32px;
+    }
+
+    @include small {
+      width: 36px;
+      height: 36px;
+    }
+
+  } // social-icons
+
+}
+
+// Github link
+.github_link {
+  color: #000;
+  text-decoration: none;
+}
+.github_link a:hover {
+  color: #F1F1F1;
+  text-decoration: none;
+}

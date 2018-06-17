@@ -1,0 +1,5 @@
+In ML , if data shows a lot of variance, regression will be significantly affected in term of accuracy.
+
+In this case, classification might be better
+
+simple options: Bayes Network, Perceptron (create linear separation between the classes), logistic Regression

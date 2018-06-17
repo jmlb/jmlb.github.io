@@ -1,0 +1,23 @@
+Save the images
+
+http://wiki.ros.org/rosbag/Tutorials/Exporting%20image%20and%20video%20data
+
+   1 roscd image_view
+   2 rosmake image_view --rosdep-install
+   This does not work: use rosdep install image_view
+   3 sudo aptitude install mjpegtools
+   use sudo apt install mjpegtools
+
+
+   Exporting jpegs from bag file
+To export jpeg images from a bag file first you will need to create a launch file which will dump the data. This example uses /camera/image_raw as the topic for the desired image data. This can be replaced as needed. 
+
+
+Toggle line numbers
+   1 <launch>
+   2   <node pkg="rosbag" type="play" name="rosbag" args="-d 2 $(find image_view)/test.bag"/>
+   3   <node name="extract" pkg="image_view" type="extract_images" respawn="false" output="screen" cwd="ROS_HOME">
+   4     <remap from="image" to="/camera/image_raw"/>
+   5   </node>
+   6 </launch>
+

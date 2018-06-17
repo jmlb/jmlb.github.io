@@ -1,0 +1,30 @@
+        \documentclass{standalone}
+        \usepackage{tikz}
+        \begin{document}
+        \fontsize{16px}{16px}\selectfont
+        \begin{tikzpicture}
+
+  \node (bx1) at (0,0) [draw,thick,minimum width=1.5cm,minimum height=4cm] {};
+  \node[align=center,font=\large,rotate=0] at (bx1.center) {LSTM};
+
+  \node (bx2) at (3,0) [draw,thick,minimum width=1.5cm,minimum height=4cm] {};
+  \node[align=center,font=\large,rotate=0] at (bx2.center) {LSTM};
+
+  \node (bx3) at (6,0) [draw,thick,minimum width=1.5cm,minimum height=4cm] {};
+  \node[align=center,font=\large,rotate=0] at (bx3.center) {LSTM};
+
+  \draw [->,>=stealth] (0.75,-0.5) -- (2.25,-0.5);
+  \draw [->,>=stealth] (0.75, 0.5) -- (2.25, 0.5);
+
+  \draw [->,>=stealth] (3.75, -0.5) -- (5.25, -0.5);
+  \draw [->,>=stealth] (3.75, 0.5) -- (5.25, 0.5);
+
+  \draw [->,>=stealth] (6.75, -0.5) --node[pos=.7,fill=white,inner sep=0pt]{h} (8.25, -0.5);
+  \draw [->,>=stealth] (6.75, 0.5) --node[pos=.7,fill=white,inner sep=0pt]{c} (8.25, 0.5);
+
+  \draw [->,>=stealth] (0, 2) -- node[pos=.7,fill=white,inner sep=0pt]{$h$}(0, 3.5);
+  \draw [->,>=stealth] (3, 2) -- node[pos=.7,fill=white,inner sep=0pt]{$h$}(3, 3.5);
+  \draw [->,>=stealth] (6, 2) -- node[pos=.7,fill=white,inner sep=0pt]{$h$}(6, 3.5);
+  \draw [->,>=stealth] (0,-4) -- (0,-2);
+        \end{tikzpicture}
+        \end{document}

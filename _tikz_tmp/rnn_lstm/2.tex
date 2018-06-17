@@ -1,0 +1,16 @@
+        \documentclass{standalone}
+        \usepackage{tikz}
+        \begin{document}
+        \fontsize{16px}{16px}\selectfont
+        \begin{tikzpicture}
+
+  \node (bx1) at (0,0) [draw,thick,minimum width=5cm,minimum height=2cm] {};
+  \node[align=center,font=\large,rotate=0] at (bx1.center) {encoder};
+
+  \node (bx2) at (9,0) [draw,thick,minimum width=5cm,minimum height=2cm] {};
+  \node[align=center,font=\large,rotate=0] at (bx2.center) {Decoder};
+
+  \draw [->,>=stealth] (2.5,0) -- node[pos=.7,fill=white,inner sep=0pt]{context}(6.5,0);
+  
+        \end{tikzpicture}
+        \end{document}

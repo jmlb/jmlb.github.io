@@ -1,0 +1,24 @@
+        \documentclass{standalone}
+        \usepackage{tikz}
+        \begin{document}
+        \fontsize{16px}{16px}\selectfont
+        \begin{tikzpicture}
+
+  \node (bx1) at (0,0) [draw,thick,minimum width=3cm,minimum height=0.8cm] {};
+  \node[align=center,font=\large,rotate=0] at (bx1.center) {input};
+
+  \node (bx2) at (0,3) [draw,thick,minimum width=3cm,minimum height=2cm] {};
+  \node[align=center,font=\large,rotate=0] at (bx2.center) {LSTM};
+
+  \node (bx3) at (0,6) [draw,thick,minimum width=4cm,minimum height=0.8cm] {};
+  \node[align=center,font=\large,rotate=0] at (bx3.center) { FC };
+
+  \node (bx4) at (0,8) [draw,thick,minimum width=4cm,minimum height=0.8cm] {};
+  \node[align=center,font=\large,rotate=0] at (bx4.center) { softmax};
+
+  \draw [->,>=stealth] (0,0.4) -- (0,1.8);
+  \draw [->,>=stealth] (0,4.1) -- node[pos=.7,fill=white,inner sep=0pt]{h}(0,5.5);
+  \draw [->,>=stealth] (0,6.5) -- (0,7.6);
+  
+        \end{tikzpicture}
+        \end{document}

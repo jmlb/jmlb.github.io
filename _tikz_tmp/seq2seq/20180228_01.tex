@@ -1,0 +1,15 @@
+        \documentclass{standalone}
+        \usepackage{tikz}
+        \begin{document}
+        \fontsize{16px}{16px}\selectfont
+        \begin{tikzpicture}
+
+  \node (bx1) at (0,0) [draw,thick,minimum width=1cm,minimum height=1cm] {};
+  \node[align=center,font=\large,rotate=0] at (bx1.center) {h0};
+
+  \node (bx2) at (1.5,0) [draw,thick,minimum width=1cm,minimum height=1cm] {};
+  \node[align=center,font=\large,rotate=0] at (bx2.center) {h1};
+
+  \draw [->,>=stealth] (0.6,0) -- node[pos=.7,fill=white,inner sep=1pt]{}(0.9,0);
+        \end{tikzpicture}
+        \end{document}

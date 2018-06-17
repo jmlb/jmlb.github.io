@@ -1,0 +1,31 @@
+title: My uplifting Journey into Machine Learning and Deep Learning
+description: 'my uplifiting journey into Machine learning and Deep learning. A physicist on a path to a new career.'
+show_downloads: true
+
+baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: 'http://jmbeaujour.com' # change this to the base hostname & protocol for your site
+
+twitter_username: 
+github_username:  jmlb
+
+blog:
+  date_format: "%b %-d, %Y"
+  comments: true
+  blog_type: ''
+
+theme: # leave it empty
+
+# social
+author: 
+  name:              'Jean-Marc Beaujour'
+  email:             'jmlbeaujour@gmail.com'
+
+# Site settings
+permalink:           pretty
+#relative_permalinks: true
+future: false
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+

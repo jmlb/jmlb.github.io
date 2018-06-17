@@ -1,0 +1,24 @@
+        \documentclass{standalone}
+        \usepackage{tikz}
+        \begin{document}
+        \fontsize{16px}{16px}\selectfont
+        \begin{tikzpicture}
+[scale=5]
+
+\draw[->,ultra thick] (-1,0)--(1,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-0.1)--(0,1) node[above]{$y$};
+\draw (-1,1)--(0,0);
+\draw (0, 0)--(1, 1)node[above]{$||w||$};
+\node[text width=4cm, red] at (-0.6,0.5) {grad = -1};
+\node[text width=4cm, red] at (1,0.5) {grad = +1};
+\node[text width=5cm] at (-0.1,-0.2) {$grad_0$ = unknown};
+\draw[dotted, blue] (-1, -0.9)--(1, 0.9);
+\draw[dotted, blue] (-1, -0.6)--(1, 0.6);
+\draw[dotted, blue] (-1, -0.2)--(1, 0.2);
+\draw[dotted, blue] (-1, -0.1)--(1, 0.1);
+\draw[dotted, blue] (-1, 0.9)--(1, -0.9);
+\draw[dotted, blue] (-1, 0.6)--(1, -0.6);
+\draw[dotted, blue] (-1, 0.2)--(1, -0.2);
+\draw[dotted, blue] (-1, 0.1)--(1, -0.1);
+        \end{tikzpicture}
+        \end{document}
