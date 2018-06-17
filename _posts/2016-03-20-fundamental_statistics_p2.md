@@ -58,7 +58,7 @@ Given a population with mean \\(\mu\\) and standard ddeviation \\(\sigma\\), if 
   \end{align}
   $$
 
-{% tikz 20160320_01 %}
+<!-- {% tikz 20160320_01 %}
 
 % define normal distribution function 'normaltwo'
     \def\normaltwo{\x,{4*1/exp(((\x-3)^2)/2)}}
@@ -88,3 +88,4 @@ Given a population with mean \\(\mu\\) and standard ddeviation \\(\sigma\\), if 
     \draw[->] (0,0) -- (6.2,0) node[right] {};
     \draw[->] (0,0) -- (0,5) node[above] {};
 {% endtikz %}
+-->
