@@ -9,7 +9,7 @@ summary: "Zoom premium is a semantic segmentation app that is tasked to remove o
 github-link: "na"
 ---
 
-<div style="text-align: justify; border-left: 1.0rem solid black; padding-left: 20px;margin-top:5rem"><span style="font-size: 1.3em;"> Zoom premium is a semantic segmentation app that is tasked to remove or replace the background in webcam live video stream. The Deep Learning model is based on MobileNet and UNet, and as a result it has a small footprint: about 6 million parameters. This demo shows how inference conducted exclusively on the client browser can be performed even for ressource heavy tasks such as semantic segmentation.
+<div style="text-align: justify; border-left: 1.0rem solid black; padding-left: 20px; margin-top:5rem"><span style="font-size: 1.0em;"> Zoom premium is a semantic segmentation app that is tasked to remove or replace the background in webcam live video stream. The Deep Learning model is based on MobileNet and UNet, and as a result it has a small footprint: about 6 million parameters. This demo shows how inference conducted exclusively on the client browser can be performed even for ressource heavy tasks such as semantic segmentation.
 <br>
 <br>
 For more info about how I build the app check out the post.<br>
@@ -23,8 +23,8 @@ Have fun!
 
   <!-- Big buttons. -->
   
-<div style="text-align:center; width: 90%; padding: 0px; border: 0px solid rgba(255, 255, 255, 0.05); margin:0 auto;">
-<div class="panel-row big-buttons">
+<div style="text-align:center; width: 90%; padding: 0px; border: 2px solid #C0C0C0; margin:0 auto; background-color: #303030">
+<div class="panel-row big-buttons" >
   <br>
   <br>
     <span style="font-size: 3.0em; text-shadow: 2px 2px #404040; color: #000; font-weight: bold; width:100%; text-align: center">Zoom <font style="color: #FFD700;"> Premium</font> <br><br></span>
@@ -35,9 +35,8 @@ Have fun!
   <div style="margin: 0px; padding: 0px; border: 1px solid rgba(255, 255, 255, 0.75); text-align:center; float: center" id="container-vid">
     <!-- container video Original -->
     <!-- menu -->
-    <div style="float: left; display: inline-block; margin-left: 1 1 1 1; padding: 0px; border: 1px solid black; text-align: center; color:#FFF; font-size: 1.2rem; padding-top: 5px">
+    <div style="float: left; display: inline-block; margin-left: 1 1 1 1; padding: 0px; border: 1px solid black; text-align: center; color: #E0E0E0; font-size: 0.8rem; padding-top: 5px">
     Settings
-    <hr style="width: 80%;">
     <br>
     <br>
     <span> <button id="show_original" style="background-color: #f44336; width: 100px; border-radius: 2px; font-size: 1.1rem"> OFF </button></span>
@@ -45,8 +44,8 @@ Have fun!
       <br>
       <br>
         <fieldset>
-    <legend style="font-size: 0.8rem; text-align: left; color: black">Custom BCK</legend>
-    <span style="font-size: 0.5em; color: black">Click the [ON] button to show the matter frame.</span>
+    <legend style="font-size: 0.8rem; text-align: left; color: #E0E0E0;">Custom BCK</legend>
+    
     <div class="control">
         <select name="custom_bkg" id="custom_bkg" style="color: black; width: 120px; font-size:1rem" tabindex="1">
         <option value="black" selected="selected">Black</option>
@@ -82,7 +81,9 @@ Have fun!
 
   <br>
   <br>
-  Frames per seconds: <span id="fps"><span>
+  FPS: <span id="fps"><span>
+  <br>
+  <span style="font-size: 0.8em; color: #E0E0E0;">Select a background using the drop down menu. Then, click the [ON] button to show the matted frame.</span>
   <!-- store the background image -->
 
   </span></span></div>
