@@ -32,12 +32,12 @@ Have fun!
   </div><!-- /.panel-row -->
 
   <!-- container video row -->
-  <div style="margin: 0px; padding: 0px; border: 1px solid rgba(255, 255, 255, 0.75); background-color: rgba(255, 255, 255, 0.25); text-align:center; float: center" id="container-vid">
+  <div style="margin: 0px; padding: 0px; border: 1px solid rgba(255, 255, 255, 0.75); text-align:center; float: center" id="container-vid">
     <!-- container video Original -->
     <!-- menu -->
-    <div style="float: left; display: inline-block; margin-left: 1 1 1 1; padding: 0px; border: 1px solid rgba(255, 255, 255, 0.50); text-align: center; color:#FFF; font-size: 1.2rem; padding-top: 5px">
+    <div style="float: left; display: inline-block; margin-left: 1 1 1 1; padding: 0px; border: 1px solid black; text-align: center; color:#FFF; font-size: 1.2rem; padding-top: 5px">
     Settings
-    <hr style="background-color: rgba(175, 175, 175, 0.05); width: 80%">
+    <hr style="width: 80%;">
     <br>
     <br>
     <span> <button id="show_original" style="background-color: #f44336; width: 100px; border-radius: 2px; font-size: 1.1rem"> OFF </button></span>
@@ -46,7 +46,7 @@ Have fun!
       <br>
         <fieldset>
     <legend style="font-size: 0.8rem; text-align: left; color: black">Custom BCK</legend>
-    Click the [ON] button to show the matter frame.
+    <span style="font-size: 0.5em; color: black">Click the [ON] button to show the matter frame.</span>
     <div class="control">
         <select name="custom_bkg" id="custom_bkg" style="color: black; width: 120px; font-size:1rem" tabindex="1">
         <option value="black" selected="selected">Black</option>
