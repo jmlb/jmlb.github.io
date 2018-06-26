@@ -9,7 +9,9 @@ summary: "Zoom premium is a semantic segmentation app that is tasked to remove o
 github-link: "na"
 ---
 
-<div style="text-align: justify; border-left: 1.2rem solid black; padding-left: 50px;margin-top:5rem"><span style="font-size: 1.3em;"> Zoom premium is a semantic segmentation app that is tasked to remove or replace the background in webcam live video stream. The Deep Learning model is based on MobileNet and UNet, and is a consequence a small footprint model with about 6 million parameters. This demo shows how inference conducted exclusively on the client browser can be performed even for ressource heavy tasks such as semantic segmentation.
+<div style="text-align: justify; border-left: 1.0rem solid black; padding-left: 20px;margin-top:5rem"><span style="font-size: 1.3em;"> Zoom premium is a semantic segmentation app that is tasked to remove or replace the background in webcam live video stream. The Deep Learning model is based on MobileNet and UNet, and as a result it has a small footprint: about 6 million parameters. This demo shows how inference conducted exclusively on the client browser can be performed even for ressource heavy tasks such as semantic segmentation.
+<br>
+<br>
 For more info about how I build the app check out the post.<br>
 Have fun!
 </span>
@@ -35,7 +37,7 @@ Have fun!
     <!-- menu -->
     <div style="float: left; display: inline-block; margin-left: 1 1 1 1; padding: 0px; border: 1px solid rgba(255, 255, 255, 0.50); text-align: center; color:#FFF; font-size: 1.2rem; padding-top: 5px">
     Settings
-    <hr style="background-color: rgba(255, 255, 255, 0.05); width: 80%">
+    <hr style="background-color: rgba(175, 175, 175, 0.05); width: 80%">
     <br>
     <br>
     <span> <button id="show_original" style="background-color: #f44336; width: 100px; border-radius: 2px; font-size: 1.1rem"> OFF </button></span>
@@ -54,7 +56,7 @@ Have fun!
         <option value="/tensorflowjs/zoom_premium/dist/80b8bee8f22deddcd2715c4d59c1a485.jpg">nature</option>
 </select>
   </div>
-  Select a background from the drop down menu and click [ON]
+
   </fieldset>
     </div>
 
@@ -80,7 +82,7 @@ Have fun!
 
   <br>
   <br>
-  Frame per seconds: <span id="fps"><span>
+  Frames per seconds: <span id="fps"><span>
   <!-- store the background image -->
 
   </span></span></div>
