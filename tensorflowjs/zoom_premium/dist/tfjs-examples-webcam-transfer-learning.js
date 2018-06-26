@@ -45959,7 +45959,7 @@ var bkg_data = [];
 var predictions = 0;
 
 var model = void 0;
-var LOCAL_MODEL_JSON_URL = 'http://storage.googleapis.com/modelinsight/tfjs/model.json';
+var LOCAL_MODEL_JSON_URL = 'https://storage.googleapis.com/modelinsight/tfjs/model.json';
 
 function get_background() {
   ui.load_bgd_image();
