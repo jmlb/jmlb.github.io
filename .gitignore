@@ -2,4 +2,4 @@
 .bundle
 Gemfile.lock
 *.gem
-old_plugins.zip
+2check/
