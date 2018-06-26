@@ -44,7 +44,7 @@ Have fun!
       <br>
         <fieldset>
     <legend style="font-size: 0.8rem; text-align: left; color: black">Custom BCK</legend>
-
+    Click the [ON] button to show the matter frame.
     <div class="control">
         <select name="custom_bkg" id="custom_bkg" style="color: black; width: 120px; font-size:1rem" tabindex="1">
         <option value="black" selected="selected">Black</option>
@@ -53,7 +53,9 @@ Have fun!
         <option value="/tensorflowjs/zoom_premium/dist/09f913c68ab75115d26ec227daad16c7.jpeg">beach</option>
         <option value="/tensorflowjs/zoom_premium/dist/80b8bee8f22deddcd2715c4d59c1a485.jpg">nature</option>
 </select>
-  </div></fieldset>
+  </div>
+  Select a background from the drop down menu and click [ON]
+  </fieldset>
     </div>
 
     <div style="float: left; display: inline-block; margin-left: 1 1 1 1; padding: 0px; border: 1px solid rgba(255, 255, 255, 0.50); text-align: center; color:#808080; font-size: 1.4rem">
