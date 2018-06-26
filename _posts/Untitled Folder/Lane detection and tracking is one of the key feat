@@ -1,7 +1,0 @@
-Lane detection and tracking is one of the key features of advanced driver assistance system. Lane detection is finding the white/yellow color markings on  a road. Lane tracking use the previously detected lane  markers and adjusts itself according to the motion model.
-
-Most commonly used methodologies to implement the lane detection systems are Hough Transform, Edge detection, bilateral filters.
-
-Commonly involved steps in lane detection are: (1) Noise reduction (2) Edge detection (3) Hough Transform.  Noise reduction enhances the quality of the video or images captured by a camera. Edge detection algorithms help to detect edges to reduce the complexity in the lane detection (3) Hough transform converts the image into Hough space to detect straight lines, circle and ellipses.
-
-There are lot of methodologies for lane detection. But, basic steps involved in all the methodologies are similar. 

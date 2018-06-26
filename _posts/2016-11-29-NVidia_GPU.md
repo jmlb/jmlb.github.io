@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Install NVidia GeForce GTX card for Deep Learning GPU computing
+title: Install NVidia GeForce TitanX card for Deep Learning GPU computing
 category: ml
 img_post: gpu.jpg
 author: "Jean-Marc Beaujour"
@@ -8,6 +8,10 @@ meta: "hardware"
 summary: "Here is a step by step on how to setup/install a NVidia GPU card on a Linux machine as a secondary graphic card for Deep Learning computation. That includes some tricks during the installation of the driver to prevent some known issues such as infinite login loop. "
 github-link: na
 ---
+
+
+Then define your chart like this:
+
 
 The following steps are good only if the NVIdia card is used for GPU acceleration computing only, not for display. My machine has 2 graphic cards: a Rodeon ATI (not built-in) for display and the **NVIdia GForce** for computing. Before starting, make sure to save all your work.
 
@@ -33,7 +37,8 @@ You will be asked if you wish to update Xconfig: select **NO**. If you choose YE
 Otherwise, replace NVI&lowast;.run by the full name of the file.
 
 **10. Start X-server session**<br>
-**11. Exit the TTY mode with**<br>
+**11. Exit the TTY mode**<br>
+
 
 {% highlight python linenos%}
 `"CTRL"` + `"ALT"` + `"F1"`
@@ -50,7 +55,7 @@ cd {location_of_nvidia_file}
 {% endhighlight %}
 
 
-Voila, you are all set with the installation of the driver!
+Voila! You are all set with the installation of the driver!
 
 
 The next and final step is to make sure that TensorFlow detects the GPU. Here is a short script:

@@ -28,4 +28,3 @@ future: false
 # Build settings
 markdown: kramdown
 highlighter: 'rouge'
-
