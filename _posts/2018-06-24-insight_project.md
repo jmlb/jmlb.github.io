@@ -43,7 +43,7 @@ Have fun!
       <br>
       <br>
         <fieldset>
-    <legend style="font-size: 0.8rem; text-align: left">Custom BCK</legend>
+    <legend style="font-size: 0.8rem; text-align: left; color: black">Custom BCK</legend>
 
     <div class="control">
         <select name="custom_bkg" id="custom_bkg" style="color: black; width: 120px; font-size:1rem" tabindex="1">
