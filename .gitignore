@@ -2,7 +2,4 @@
 .bundle
 Gemfile.lock
 *.gem
-tensorflowjs/zoom_premium/images
-tensorflowjs/zoom_premium/node_modules
-tensorflowjs/zoom_premium/*.*
-2check/
+2check.zip
