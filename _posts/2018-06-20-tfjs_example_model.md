@@ -4,8 +4,8 @@ title: A simple exemple of a TFJS model
 category: tensorflowjs
 tags: DeepLearning
 author: "Jean-Marc Beaujour"
-img_post: 
-summary:
+img_post: 20180620_a_simple_example_tfjs.jpeg
+summary: "Perform a polynomial regression using Tensorflow JS, and run it in the browser."
 github-link: "na"
 ---
 
@@ -33,3 +33,5 @@ const optimizer = tf.train.sgd(learningRate)
 for (let i=0; i<EPOCHS;i++){
   optimizer.minimize(() => loss(f(data.xs), data.ys));
 }
+
+```

@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Portrait matting on live video stream from the client browser
+title: Background Removal in Real-Time Video Chats using TensorflowJS
 category: tensorflowjs
 tags: DeepLearning lstm rnn keras
 author: "Jean-Marc Beaujour"
 img_post: 20180624-zoom_premium.png
 summary: "Zoom premium is a semantic segmentation app that is tasked to remove or replace the background in webcam live video stream. The Deep Learning model is based on MobileNet and UNet, and is a consequence a small footprint model with about 6 million parameters. This demo shows how inference conducted exclusively on the client browser can be performed even for ressource heavy tasks such as semantic segmentation. Have fun!"
-github-link: "na"
+github-link: "https://github.com/jmlb/insight_project"
 ---
 
-<div style="text-align: justify; border-left: 1.0rem solid black; padding-left: 20px; margin-top:5rem"><span style="font-size: 1.0em;"> Zoom premium is a semantic segmentation app that is tasked to remove or replace the background in webcam live video stream. The Deep Learning model is based on MobileNet and UNet, and as a result it has a small footprint: about 6 million parameters. This demo shows how inference conducted exclusively on the client browser can be performed even for ressource heavy tasks such as semantic segmentation.
+<div style="text-align: justify; border-left: 0.2rem solid black; padding-left: 20px; margin-top:5rem"><span style="font-size: 1.0em;"> Zoom premium is a semantic segmentation app that is tasked to remove or replace the background in webcam live video stream. The Deep Learning model is based on MobileNet and UNet, and as a result it has a small footprint: about 6 million parameters. This demo shows how inference conducted exclusively on the client browser can be performed even for ressource heavy tasks such as semantic segmentation.
 <br>
 <br>
-For more info about how I build the app check out the post.<br>
+For more info about the app check out 
+<a href="https://medium.com/@jmlbeaujour/real-time-matting-of-webcam-video-on-the-browser-part-1-2c71a330ed08">this post</a>.<br>
 Have fun!
 </span>
-</div>
-
+</div><br><br>
 <div id="status">Loading model...</div>
 
 <div class="controller-panels" id="controller" style="display:none">

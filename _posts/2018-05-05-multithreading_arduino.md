@@ -4,7 +4,7 @@ title: Arduino Multithreading
 category: robotics
 meta: "raspberry_pi, python"
 author: "Jean-Marc Beaujour"
-img_post: 20180405_word_embedding.jpg
+img_post: 20180505-arduino_multithreading.jpeg
 summary: 
 github-link: "na"
 ---
