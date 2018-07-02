@@ -27,7 +27,6 @@ OpenAI published a paper called Evolution Strategies as a Scalable Alternative t
 I would like to point out that even for the problem of identifying a machine learning model, such as designing a neural net’s architecture, is one where we cannot directly compute gradients. While RL, Evolution, GA etc., can be applied to search in the space of model architectures, in this post, I will focus only on applying these algorithms to search for parameters of a pre-defined model.
 
 
-
 <img src="/images/20180320/woof_meow.jpg" width="300rem" style="float: left; margin-right: 2rem; margin-left:0rem; margin-top: 0rem; margin-bottom: 0rem">
 
 The model is composed of a *feature detector*, a few blocks of convolutional layers similar to [VGG16](https://www.kaggle.com/keras/vgg16), and a fully connected classifier with the **sigmoid** activation function at the output. The model is build with Keras (Tensorflow backend).
