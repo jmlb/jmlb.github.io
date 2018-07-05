@@ -1,11 +1,11 @@
 ---
 layout: default
-field: "Flashcards"
-subtitle: "Coding"
+field: "Robotics"
+subtitle: "MOOC"
 tagline: 
 ---
 
-FLASHCARDS: a series of what is / how to on different topics ranging from python scripting and algorithm up to Deep Learning implementation. 
+My notes from the different MOOC courses on Robotics that I took.
 
 <h2>Latest Posts</h2>
 
@@ -13,7 +13,7 @@ FLASHCARDS: a series of what is / how to on different topics ranging from python
 
 <ul class="post-list">
     {% for post in site.posts %}
-    {% if post.category == "flashcards" and post.subcategory == "coding"%}
+    {% if post.category == "robotics" and post.subcategory == "mooc"%}
       <li>
           <p style="float: left; margin-right: 1rem"><img src="/images/post_title_imgs_thumbs/{{ post.img_post }}"></p>
           <p>

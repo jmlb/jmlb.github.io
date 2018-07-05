@@ -1,11 +1,9 @@
 ---
 layout: post
 title: How to mount WD Mirror Nas drive on raspberry-pi?
-category: flashcards
-subcategory: misc
-tags: WDMirror NAS RaspberryPi
 category: robotics
-author: "Jean-Marc Beaujour"
+subcategory: hardware
+tags: WDMirror NAS RaspberryPi
 summary: "Access a WD Mirror Nas Drive from a RaspberryPi is as easy as that!"
 img_post: mount_nas.jpg
 github-link: na

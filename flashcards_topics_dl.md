@@ -1,6 +1,7 @@
 ---
 layout: default
-subtitle: DeepLearning
+field: "Flashcards"
+subtitle: "Deep Learning"
 tagline: 
 ---
 

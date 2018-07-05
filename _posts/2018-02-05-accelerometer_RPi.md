@@ -1,11 +1,10 @@
 ---
 layout: post
 title: How to connect an Accelerometer to a Raspberry Pi
-meta: "deep, learning NLP"
-category: ml
-subcategory: stats
-author: "Jean-Marc Beaujour"
-img_post: 20180405_word_embedding.jpg
+category: "robotics"
+subcategory: "hardware"
+tags: "accelerometer, rpi, raspberry pi"
+img_post: 20180205_accelerometer_rpi.jpg
 summary: 
 github-link: "na"
 ---

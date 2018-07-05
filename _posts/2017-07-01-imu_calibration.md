@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Calibration of the IMU
-meta: self-driving, autonomous, raspberry-pi, rpi, arduino, imu
-category: robotics
-author: "Jean-Marc Beaujour"
+title: Calibration of an IMU
+tags: "self-driving, autonomous, raspberry-pi, rpi, arduino, imu"
+category: "robotics"
+subcategory: "hardware"
 img_post: 20170701-imu_calibration.jpg
 summary: Part 2 of the build of Sonic
 github-link: "na"

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Controls of a Drone - Robotics Nanodegree by Udacity (Term1)
-meta: "robotics, lidar"
-category: robotics
-author: "Jean-Marc Beaujour"
-img_post: 20180420-lidar_teensy.png
+tags: "robotics, controls, udacity, mooc"
+category: "robotics"
+subcategory: "mooc"
+img_post: 20180422-udacity_control_of_a_drone.jpeg
 summary: 
 github-link: ""
 ---

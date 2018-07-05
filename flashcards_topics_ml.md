@@ -1,6 +1,7 @@
 ---
 layout: default
-subtitle: MachineLearning
+field: "Flashcards"
+subtitle: "Machine Learning"
 tagline: 
 ---
 

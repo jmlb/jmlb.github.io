@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Arduino Multithreading
-category: robotics
-meta: "raspberry_pi, python"
-author: "Jean-Marc Beaujour"
-img_post: 20180505-arduino_multithreading.jpeg
+category: "robotics"
+subcategory: "hardware"
+tags: "raspberry_pi, python"
+img_post: 20160504_arduino_multithreading.jpg
 summary: 
 github-link: "na"
 ---

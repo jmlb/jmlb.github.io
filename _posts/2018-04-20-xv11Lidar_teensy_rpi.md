@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 2D Lidar Cloud Points from XV11 Lidar with Teensy Microcontroller and Raspberry Pi
-meta: "robotics, lidar"
-category: robotics
-author: "Jean-Marc Beaujour"
+tags: "robotics, lidar"
+category: "robotics"
+subcategory: "hardware"
 img_post: 20180420-lidar_teensy.png
 summary: 
 github-link: ""

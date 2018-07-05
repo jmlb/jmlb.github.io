@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Installation of a IMU
-meta: self-driving, autonomous, raspberry-pi, rpi, arduino, imu, sonic
-category: robotics
-author: "Jean-Marc Beaujour"
-img_post: install_imu.jpg
+tags: "self-driving, autonomous, raspberry-pi, rpi, arduino, imu, sonic"
+category: "robotics"
+subcategory: "hardware"
+img_post: 20170630_install_imu.jpg
 summary: 
 github-link: "na"
 ---

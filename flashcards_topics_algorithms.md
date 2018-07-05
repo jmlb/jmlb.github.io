@@ -1,6 +1,7 @@
 ---
 layout: default
-subtitle: Algorithm
+field: "Flashcards"
+subtitle: "Algorithm"
 tagline: 
 ---
 

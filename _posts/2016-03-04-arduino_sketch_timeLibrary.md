@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Arduino Sketch - Time Library
-category: robotics
-meta: "raspberry_pi, python, arduino"
-author: "Jean-Marc Beaujour"
-img_post: 20180405_word_embedding.jpg
+category: "robotics"
+subcategory: "hardware"
+tags: "raspberry_pi, python, arduino"
+img_post: 20160304_arduino_time_lib.jpg
 summary: 
 github-link: "na"
 ---
+
 
 ## 1. `timeLib.h`
 The library install:

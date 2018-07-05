@@ -1,6 +1,7 @@
 ---
 layout: default
-subtitle: Probability
+field: "Flashcards"
+subtitle: "Probability"
 tagline: 
 ---
 

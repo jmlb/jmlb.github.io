@@ -1,6 +1,7 @@
 ---
 layout: default
-subtitle: Statistics
+field: "Flashcards"
+subtitle: "Statistics"
 tagline: 
 ---
 

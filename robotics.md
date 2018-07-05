@@ -1,12 +1,40 @@
 ---
 layout: menu_only
-title: Robotics
+title: "Robotics"
 tagline: 
 ---
+
+{% assign default_paths = site.pages | map: "path" %}
+{% assign page_paths = site.header_pages | default: default_paths %}
+
+
+FLASHCARDS: a series of what is / how to on different Robotics topics.
+
+{% if page_paths %}
+  <div>
+    <nav>
+        <ul class="tags">
+          {% for path in page_paths %}
+            {% assign my_page = site.pages | where: "path", path | first %}
+            {% if my_page.subtitle and my_page.field=="Robotics"  %}
+              {% if my_page.subtitle contains "404" %}
+              {% else %}
+              <li class="tag">
+                <a href="{{ my_page.url | relative_url }}">{{ my_page.subtitle | escape }}</a>
+                </li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          </ul>
+       </nav>
+    </div>
+    {% endif %}
+
 
 <h2>Latest Posts</h2>
 
 <div>&nbsp;</div>
+
 <ul class="post-list">
     {% for post in site.posts %}
     {% if post.category == "robotics" %}

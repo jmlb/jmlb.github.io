@@ -5,7 +5,7 @@ category: tensorflowjs
 tags: DeepLearning lstm rnn keras
 author: "Jean-Marc Beaujour"
 img_post: 20180624-zoom_premium.png
-summary: "Zoom premium is a semantic segmentation app that is tasked to remove or replace the background in webcam live video stream. The Deep Learning model is based on MobileNet and UNet, and is a consequence a small footprint model with about 6 million parameters. This demo shows how inference conducted exclusively on the client browser can be performed even for ressource heavy tasks such as semantic segmentation. Have fun!"
+summary: "Zoom premium is a semantic segmentation app that is tasked to remove or replace the background in webcam live video stream. The Deep Learning model is based on MobileNet and UNet, and as a consequence it is a small footprint model with about 6 million parameters. This demo shows how inference conducted exclusively on the client browser can be performed even for ressource heavy tasks such as semantic segmentation. Have fun!"
 github-link: "https://github.com/jmlb/insight_project"
 ---
 

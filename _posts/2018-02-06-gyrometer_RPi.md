@@ -1,10 +1,10 @@
 ---
 layout: post
 title: How to connect an Gyrometer to a Raspberry Pi
-meta: "deep, learning NLP"
-category: robotics
-author: "Jean-Marc Beaujour"
-img_post: 20180405_word_embedding.jpg
+tags: "gyrometer, rpi, raspberry pi"
+category: "robotics"
+subcategory: "hardware"
+img_post: 20180206_gyrometer_rpi.jpg
 summary: 
 github-link: "na"
 ---

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Arduino Sketch - Queues Library
-category: robotics
-meta: "raspberry_pi, python, arduino"
-author: "Jean-Marc Beaujour"
-img_post: 20180405_word_embedding.jpg
+category: "robotics"
+subcategory: "hardware"
+tags: "raspberry_pi, python, arduino"
+img_post: 20160504_arduino_queues.jpg
 summary: 
 github-link: "na"
 ---

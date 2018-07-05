@@ -1,6 +1,6 @@
 ---
 layout: menu_only
-title: FlashCards
+title: "FlashCards"
 tagline: 
 ---
 
@@ -16,7 +16,7 @@ FLASHCARDS: a series of what is / how to on different topics ranging from python
         <ul class="tags">
           {% for path in page_paths %}
             {% assign my_page = site.pages | where: "path", path | first %}
-            {% if my_page.subtitle %}
+            {% if my_page.subtitle and my_page.field=="Flashcards"  %}
               {% if my_page.subtitle contains "404" %}
               {% else %}
               <li class="tag">

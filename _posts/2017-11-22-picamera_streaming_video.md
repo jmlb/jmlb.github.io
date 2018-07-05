@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to stream at 28fps with Picamera?
-category: robotics
-img_post: picamera_streaming.png
-author: "Jean-Marc Beaujour"
-meta: "raspberry_pi, python"
+title: How to stream at 28fps with a Picamera?
+category: "robotics"
+subcategory: "hardware"
+img_post: 20171122_picamera_streaming_video.png
+tags: "raspberry_pi, python"
 summary: "We look at the performance of streaming mjpeg 
 from a raspberry pi to a macbook pro, with the Picamera library (Python). We use a camera module."
-github-link: https://github.com/jmlb/RPi_libraries/tree/master/vidstream_picamera
+github-link: "https://github.com/jmlb/RPi_libraries/tree/master/vidstream_picamera"
 ---
 
 I have been looking for ways to get a better video streaming performance from my Raspberry Pi 3. What I mean by better performance is streaming with **high fps and low video latency**. In this article, I explained how to stream video-images with [MJPEG compression](https://en.wikipedia.org/wiki/Motion_JPEG) from a Raspberry Pi to a Laptop over Wifi, using the **Picamera** library. 
